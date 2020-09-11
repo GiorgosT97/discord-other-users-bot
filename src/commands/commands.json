@@ -1,0 +1,10 @@
+{
+  "!helloMessage": {
+    "type": "messageCommand",
+    "help": "User greeting message."
+  },
+  "!goodbyeMessage": {
+    "type": "messageCommand",
+    "help": "User leaving message."
+  }
+}

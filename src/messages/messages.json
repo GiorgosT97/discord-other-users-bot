@@ -1,0 +1,16 @@
+{
+  "5304": {
+    "type": "leaveMessage",
+    "leaveMessage": "Bye giorgi",
+    "welcomeMessage": "GEI A SOU"
+  },
+  "6090": {
+    "type": "leaveMessage",
+    "welcomeMessage": "Trim esta aqui",
+    "leaveMessage": "Trim Adios"
+  },
+  "7255": {
+    "welcomeMessage": "Sakis came online to zalisi our arxidia again.",
+    "leaveMessage": "Sakis went to gerodiaolo."
+  }
+}
