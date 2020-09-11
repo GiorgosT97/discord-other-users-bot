@@ -1,0 +1,25 @@
+{
+  "name": "discord-other-users-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "discord.js": "^12.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node -r dotenv/config main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiorgosT97/discord-other-users-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GiorgosT97/discord-other-users-bot/issues"
+  },
+  "homepage": "https://github.com/GiorgosT97/discord-other-users-bot#readme"
+}
