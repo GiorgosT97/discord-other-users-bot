@@ -5,6 +5,11 @@ import { getMessageCommands } from "../commands";
 const messages = JSON.parse(
   readFileSync("src/messages/messages.json", "utf-8")
 );
+
+const typeToMessage = {
+  online: "welcomeMessage",
+  offline: "leaveMessage",
+};
 /**
  * Funtion that adds one message or updates accordingly.
  * @param user The user sent the message.
@@ -46,11 +51,11 @@ export function sanitizeMessage(message) {
 export function sendUserMessage(user, channel, type) {
   // Case where user has already add a message.
   const userTag = user.discriminator;
-  if (Object.keys(messages).includes(userTag)) {
-    // Welcome message.
-    if (type === "online") channel.send(messages[userTag]["welcomeMessage"]);
-    // leave message
-    else channel.send(messages[userTag]["leaveMessage"]);
+  if (
+    Object.keys(messages).includes(userTag) &&
+    messages[userTag][typeToMessage[type]]
+  ) {
+    channel.send(messages[userTag][typeToMessage[type]]);
   }
   // Case where user has not saved a message.
   else {
